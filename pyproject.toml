@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "random-picture"
+version = "0.1.0"
+description = ""
+authors = ["rock-or-stone"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.1"
+uvicorn = {extras = ["standard"], version = "^0.30.3"}
+sqlalchemy = "^2.0.31"
+alembic = "^1.13.2"
+asyncpg = "^0.29.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
